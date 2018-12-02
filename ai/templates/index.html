@@ -22,11 +22,11 @@
       width: auto;
       height: auto;
     }
-      div.center-block>img{
+      div.center-block>a>img{
         height: 300px;
         width: 600px;
       }
-      div#cols>img{
+      div#cols>a>img{
         vertical-align: middle;      
         padding-top: 10px;
       }
@@ -45,39 +45,39 @@
     <meta name="description" content="News about A.I., Machine Learning, Quantum computing, etc.">
   </head>
   <br><br>
-  <body style="font-family: chilanka;font-weight: bolder;">
-    <div class="center-block container">
-      <a href="{%url 'page' %}">
-      <img src="{%static 'ai1.jpeg'%}"class="center-block img-responsive"></a>
-      <h1 class="text-center" style="font-size: 50px;font-family: Purisa;color: white">The A.I. Blog</h1>
-    </div>
+  <body style="font-family: chilanka;font-weight: bolder;"><center>
+      <div style="display:inline-block;"><h1 class="" style="font-size: 50px;font-family: Purisa;color: white;display:inline-block;vertical-align: middle">The 
+      <a href="{%url 'page'%}">
+      <img style="height: 200px;width: 250px;display:inline-block;" src="{%static 'hello.jpg'%}"class="img-responsive"></a>
+       Blog</h1>
+    </div></center><br><br>
     <div class="center-block container" >
     <div class="center-block" id="cols">
-      <img src="{%static 'AI1.jpg'%}"class="img-responsive center-block" alt="Responsive image">
+       <a href="{%url 'ai' 1%}"><img src="{%static 'AI1.jpg'%}"class="img-responsive center-block" alt="Responsive image"></a>
       <h5 class="text-center">Google's new Quantum processor-Bristlecone.TTheir strategy is to explore near-term applications using systems that are forward compatible to a large-scale universal ... <a href="{%url 'ai' 1%}">Read more...</a></h5>
     </div>
     <div class="center-block" id="cols">
-      <img src="{%static 'AI2.jpg'%}"class="img-responsive center-block" alt="Responsive image">
+      <a href="{%url 'ai' 2%}"><img src="{%static 'AI2.jpg'%}"class="img-responsive center-block" alt="Responsive image"></a>
       <h5 class="text-center">Quantum computing – that sci-fi stuff that turns entangled molecules into computing digits – is drawing ever closer to reality <a href="{%url 'ai' 2%}">Read more...</a></h5>
   </div>
   </div>
 <div class="center-block container">
     <div class="center-block" id="cols">
-      <img src="{%static 'elonmusk.jpg'%}"class="img-responsive center-block" alt="Responsive image">
+        <a href="{%url 'ai' 3%}"><img src="{%static 'elonmusk.jpg'%}"class="img-responsive center-block" alt="Responsive image"></a>
       <h5 class="text-center" >Tesla and SpaceX CEO Elon Musk states that autonomous machines are more dangerous to the world than North Korea and could unleash “weapons of terror.”  <a href="{%url 'ai' 3%}">Read more...</a></h5>
     </div>
     <div class="center-block" id="cols">
-      <img src="{%static 'jobs.jpg'%}"class="img-responsive center-block" alt="Responsive image">
+        <a href="{%url 'ai' 3%}"><img src="{%static 'jobs.jpg'%}"class="img-responsive center-block" alt="Responsive image"></a>
       <h5 class="text-center" >Artificial Intelligence (A.I.) is a massive industry, with potential in every field from autonomous cars to human resources. These countries are leading in hiring jobs in AI .<a href="{%url 'ai' 4%}">Read more...</a></h5>
     </div></div>
 <div class="center-block container">
     <div class="center-block " id="cols">
-      <img src="{%static 'iit.jpg'%}"class="img-responsive center-block" alt="Responsive image">
+       <a href="{%url 'ai' 5%}"><img src="{%static 'iit.jpg'%}"class="img-responsive center-block" alt="Responsive image"></a>
       <h5 class="text-center">IIT Delhi and U.S. tech giant IBM collabs for research in A.I. for research. The collaboration will enable the duo to develop AI solutions for 
         <a href="{%url 'ai' 5%}">Read more...</a></h5>
     </div>
     <div class="center-block" id="cols">
-      <img src="{%static 'healthcare.jpg'%}"class="img-responsive center-block" alt="Responsive image">
+     <a href="{%url 'ai' 6%}"> <img src="{%static 'healthcare.jpg'%}"class="img-responsive center-block" alt="Responsive image"></a>
       <h5 class="text-center">It might seem unfairly flattering to call a disease as devastating as cancer ‘intelligent’, but recognizing the intellect of the disease might help us beat it..<a href="{%url 'ai' 6%}">Read more...</a></h5>
     </div></div>    <br><br><br><br>
 </body>
