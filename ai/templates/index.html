@@ -18,87 +18,64 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="{%static 'css1.css'%}">
     <style>
-      html{
-    min-width: 500px;
-  }
-    div.header>h1,img
-    {
-      display: inline-block;
-      text-align: center;
-      vertical-align: middle;
-    }
-    div.header{
-      position: static;
-    }
-    
-    div.rows{
-      display: grid;
-      /*margin bottom: 50px;*/
-      grid-template-rows:auto auto;
-      grid-column-gap: 25px;
-      align-content: center;
-      margin-left: 50px;
-      margin-right: 50px;
-      grid-template-columns: auto auto;
-
-    }
-    div.columns{
-      background-color: white;
-      text-align: center;
-      box-shadow: 0px 0px 30px black;
-      border-radius: 30px;
-      margin-top: 50px;
-    }
-    div.columns>img{
-      height: 300px;
-      width: 500px;
-      margin-top: 20px;
-    }
-    div.columns>h5{
-      text-align: center;
-       margin-left: 50px;
-      margin-right: 50px;
-    }
+      div.center-block>img{
+        height: 300px;
+        width: 600px;
+      }
+      div#cols>img{
+        vertical-align: middle;      
+        padding-top: 10px;
+      }
+      div#cols{
+        background-color: white;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border-radius: 10px;
+        }
+      div#cols>h5{
+        font-size: 20px;
+       font-weight: normal;
+      }
     </style>
     <meta charset="utf-8">
     <meta name="description" content="News about A.I., Machine Learning, Quantum computing, etc.">
   </head>
+  <br><br>
   <body style="font-family: chilanka;font-weight: bolder;">
-    <div class="header">
+    <div class="center-block container">
       <a href="{%url 'page' %}">
-      <img src="{%static 'ai1.jpeg'%}" height="100px" width="170px" style="margin: 10px;text-align: middle; border-radius: 10px;border-color: black;"></a>
-      <h1 style="vertical-align: middle;">The A.I. Blog</h1>
+      <img src="{%static 'ai1.jpeg'%}"class="center-block img-thumbnail"></a>
+      <h1 class="text-center" style="font-size: 50px;font-family: Purisa;color: white">The A.I. Blog</h1>
     </div>
-    <div class="rows">
-    <div class="columns">
-      <img src="{%static 'AI1.jpg'%}">
-      <h5>Google's new Quantum processor-Bristlecone. Bristlecone is Google’s newest quantum processor <a href="{%url 'ai' 1%}">Read more...</a></h5>
+    <div class="center-block container" >
+    <div class="center-block" id="cols">
+      <img src="{%static 'AI1.jpg'%}"class="img-responsive center-block" alt="Responsive image">
+      <h5 class="text-center">Google's new Quantum processor-Bristlecone.TTheir strategy is to explore near-term applications using systems that are forward compatible to a large-scale universal ... <a href="{%url 'ai' 1%}">Read more...</a></h5>
     </div>
-    <div class="columns">
-      <img src="{%static 'AI2.jpg'%}">
-      <h5>Quantum computing – that sci-fi stuff that turns entangled molecules into computing digits – is drawing ever closer to reality. In September, leading companies including Alphabet, IBM <a href="{%url 'ai' 2%}">Read more...</a></h5>
+    <div class="center-block" id="cols">
+      <img src="{%static 'AI2.jpg'%}"class="img-responsive center-block" alt="Responsive image">
+      <h5 class="text-center">Quantum computing – that sci-fi stuff that turns entangled molecules into computing digits – is drawing ever closer to reality <a href="{%url 'ai' 2%}">Read more...</a></h5>
   </div>
   </div>
-<div class="rows">
-    <div class="columns">
-      <img src="{%static 'elonmusk.jpg'%}">
-      <h5>Tesla and SpaceX CEO Elon Musk states that autonomous machines are more dangerous to the world than North Korea and could unleash “weapons of terror.”  <a href="{%url 'ai' 3%}">Read more...</a></h5>
+<div class="center-block container">
+    <div class="center-block" id="cols">
+      <img src="{%static 'elonmusk.jpg'%}"class="img-responsive center-block" alt="Responsive image">
+      <h5 class="text-center" >Tesla and SpaceX CEO Elon Musk states that autonomous machines are more dangerous to the world than North Korea and could unleash “weapons of terror.”  <a href="{%url 'ai' 3%}">Read more...</a></h5>
     </div>
-    <div class="columns">
-      <img src="{%static 'jobs.jpg'%}">
-      <h5>Artificial Intelligence (A.I.) is a massive industry, with potential in every field from autonomous cars to human resources. These countries are leading in hiring jobs in AI .<a href="{%url 'ai' 4%}">Read more...</a></h5>
+    <div class="center-block" id="cols">
+      <img src="{%static 'jobs.jpg'%}"class="img-responsive center-block" alt="Responsive image">
+      <h5 class="text-center" >Artificial Intelligence (A.I.) is a massive industry, with potential in every field from autonomous cars to human resources. These countries are leading in hiring jobs in AI .<a href="{%url 'ai' 4%}">Read more...</a></h5>
     </div></div>
-<div class="rows">
-    <div class="columns">
-      <img src="{%static 'iit.jpg'%}">
-      <h5>IIT Delhi and U.S. tech giant IBM collabs for research in A.I. for research. The collaboration will enable the duo to develop AI solutions for 
+<div class="center-block container">
+    <div class="center-block " id="cols">
+      <img src="{%static 'iit.jpg'%}"class="img-responsive center-block" alt="Responsive image">
+      <h5 class="text-center">IIT Delhi and U.S. tech giant IBM collabs for research in A.I. for research. The collaboration will enable the duo to develop AI solutions for 
         <a href="{%url 'ai' 5%}">Read more...</a></h5>
     </div>
-    <div class="columns">
-      <img src="{%static 'healthcare.jpg'%}">
-      <h5>It might seem unfairly flattering to call a disease as devastating as cancer ‘intelligent’, but recognizing the intellect of the disease might help us beat it..<a href="{%url 'ai' 6%}">Read more...</a></h5>
-    </div></div>
-    <br><br><br><br>
+    <div class="center-block" id="cols">
+      <img src="{%static 'healthcare.jpg'%}"class="img-responsive center-block" alt="Responsive image">
+      <h5 class="text-center">It might seem unfairly flattering to call a disease as devastating as cancer ‘intelligent’, but recognizing the intellect of the disease might help us beat it..<a href="{%url 'ai' 6%}">Read more...</a></h5>
+    </div></div>    <br><br><br><br>
 </body>
 </body>
 </html>

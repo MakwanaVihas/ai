@@ -40,6 +40,5 @@ img:hover
 }
 img
 {
-      transition: transform 3s;
-      border-radius: 10px;
+      transition: transform 1s;
 }
