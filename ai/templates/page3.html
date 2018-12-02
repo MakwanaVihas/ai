@@ -15,74 +15,28 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="{%static 'css1.css'%}">
 	<style>
-    img.chinese_ai:hover
-    {
-     	/*transform: translateY(10px);*/
-    	transform: scale(1.5);
-        
-        /*transform: translate(0px, 100px);*/
-    }
-    	html{
-		min-width: 940px;
+p{
+		font-size: 1.5em;
+		font-family: Purisa;
 	}
-    img.chinese_ai{
-    	transition: transform 3s;
-    }
-	p
-	{
-			font-family: Chilanka;
-			display: inline-block;
-			color: black;
-			text-align: left;
-			display: block;
-			margin-bottom: : 20px;
-			font-size: 30px;
-			margin-left: 20px;
-			margin-right: 20px;
-
-			/*border-radius: 25px;*/
-	   }
-
-	div.para
-	{
-			background-color: white;
-			box-shadow: 0px 0px 10px black;
-			/*border-radius: 25px;*/
-		    text-align: center;
+	h2{
+		font-size: 1em;
+		font-family: Purisa;
 	}
 	</style>
-	<script>
-		document.addEventListener("DOMContentLoaded",()=>{
-			child=document.querySelector(".para");
-			img=document.querySelector(".elon");
-			child.style.marginLeft=(window.innerWidth/10).toString()+"px";
-			child.style.marginRight=(window.innerWidth/10).toString()+"px";
-			img.style.width=(window.innerWidth/2.5).toString()+"px";
-			img.style.height=(window.innerWidth/4).toString()+"px";
-			window.onresize=()=>{
-			img.style.width=(window.innerWidth/2.5).toString()+"px";
-			img.style.height=(window.innerWidth/4).toString()+"px";
-		}
-			// for(let i=0;i<child.length;i++){
-			// child[i].style.marginLeft=(window.innerWidth/7).toString()+"px";
-			// child[i].style.marginRight=(window.innerWidth/7).toString()+"px";
-		}
-		)
-	</script>
 	<title></title>
 </head>
 <body>
 	
-
-   <div class="header">
-      <a href="{%url 'index'%}">
-      <img src="{%static 'ai1.jpeg'%}" height="100px" width="170px" style="margin: 10px;vertical-align: middle; border-radius: 10px;border-color: black;"></a>
-      <h1 style="vertical-align: middle;">The A.I. Blog</h1>
+ <div class="center-block container">
+      <a href="{%url 'page' %}">
+      <img src="{%static 'ai1.jpeg'%}"class="center-block img-responsive"></a>
+      <h1 class="text-center" style="font-size: 50px;font-family: Purisa;color: white">The A.I. Blog</h1>
     </div>
-	<div class="para"><br><br><br>
+	<div class="container bg-info"><br><br><br>
 		<stong>
-		<p><center><h1 style="font-family: Purisa;font-weight: bolder; ">"To avoid becoming like monkeys, humans must merge with machines",says Elon Musk</h1></center></p></stong><br><br><br>
-		<div><img src="{%static 'elonmusk.jpg'%}" class="elon"><h2 style="font-size: 12px;font-weight: lighter;">Tesla and SpaceX CEO Elon Musk states that autonomous machines are more dangerous to the world than North Korea and could unleash “weapons of terror.”</h2></div>
+		<p><center><h1 style="font-family: Purisa;font-weight: bolder; ">"To avoid becoming like monkeys, humans must merge with machines",says Elon Musk</h1></center></p></stong><br><br><br><center>
+		<div><img src="{%static 'elonmusk.jpg'%}" class="img-responsive"><h2>Tesla and SpaceX CEO Elon Musk states that autonomous machines are more dangerous to the world than North Korea and could unleash “weapons of terror.”</h2></div></center>
 		<p>Elon Musk has become one of the most vocal critics of artificial intelligence in recnt years, issuing numerous warnings about the threat that powerful machines pose to the future of mankind.
 		</p>
 		<p>
@@ -99,11 +53,12 @@
 		</p>
 		<p>Musk has said that autonomous machines are more dangerous to the world than North Korea and could unleash “weapons of terror.” He has compared the adoption of AI to “summoning the devil.” He also believes artificial intelligence could help trigger the next world war and has argued that super-intelligent machines could come to dominate the world. In the documentary “Do you Trust This Computer,” which debuted in April, Musk warned that super computers could become “an immortal dictator from which we would never escape.”			
 		</p>
-		<p>Documentry's Trailer:<a href="https://t.co/WehHcZX7Qe">Do you trust this Computer??</a></p>
+		
 		<div align="center" style="font-family:Chilanka;"><b>Here's his interview with HBO:</b><br>
-			 <iframe width="500" height="250"  src="https://www.youtube.com/embed/y6GEugjulPw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="margin-bottom: 20px;margin-top: 40px"></iframe><br><br><br><br><br><br>
+			 <iframe width="500" height="250"  src="https://www.youtube.com/embed/y6GEugjulPw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="margin-bottom: 20px;margin-top: 40px"></iframe>
 		</div>
-      </div></body></html>
+      </div>		<br><br>
+</body></html>
 
 
 

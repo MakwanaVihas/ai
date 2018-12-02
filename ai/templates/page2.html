@@ -16,74 +16,32 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="{%static 'css1.css'%}">
 	<style>
-		html{
-		min-width: 940px;
-	       }
-    img.chinese_ai:hover
-    {
-     	/*transform: translateY(10px);*/
-    	transform: scale(1.5);
-        
-        /*transform: translate(0px, 100px);*/
-    }
-    img.chinese_ai{
-    	transition: transform 3s;
-    }
-    p>h1{
-    	font-size: 50px;
-    	font-weight: bolder;
-    }
-	p
-	{
-			font-family: Chilanka;
-			display: inline-block;
-			color: black;
-			text-align: left;
-			display: block;
-			margin-bottom: : 20px;
-			font-size: 30px;
-			margin-left: 20px;
-			margin-right: 20px;
-
-			/*border-radius: 25px;*/
-	   }
-
-	div.para
-	{
-			background-color: white;
-			box-shadow: 0px 0px 10px black;
-			/*border-radius: 25px;*/
-		    text-align: center;
+p{
+		font-size: 1.5em;
+		font-family: Purisa;
+	}
+	h2{
+		font-size: 1em;
+		font-family: Purisa;
 	}
 	</style>
-	<script>
-		document.addEventListener("DOMContentLoaded",()=>{
-			child=document.querySelector(".para");
-			child.style.marginLeft=(window.innerWidth/7).toString()+"px";
-			child.style.marginRight=(window.innerWidth/7).toString()+"px";
-			// for(let i=0;i<child.length;i++){
-			// child[i].style.marginLeft=(window.innerWidth/7).toString()+"px";
-			// child[i].style.marginRight=(window.innerWidth/7).toString()+"px";
-		}
-		)
-	</script>
 	<title></title>
 </head>
 <body>
 	
 
-   <div class="header">
-      <a href="{%url 'index'%}">
-      <img src="{%static 'ai1.jpeg'%}" height="100px" width="170px" style="margin: 10px;vertical-align: middle; border-radius: 10px;border-color: black;"></a>
-      <h1 style="vertical-align: middle;">The A.I. Blog</h1>
+    <div class="center-block container">
+      <a href="{%url 'page' %}">
+      <img src="{%static 'ai1.jpeg'%}"class="center-block img-responsive"></a>
+      <h1 class="text-center" style="font-size: 50px;font-family: Purisa;color: white">The A.I. Blog</h1>
     </div>
 
-	<div class="para"><br><br><br><strong>
+	<div class="container bg-info"><br><br><br><strong>
 		<p><center><h1 style="font-family: Purisa;">Advancing Human Life with Quantum Computing.</h1></center></p></strong>
 		<br><br><br>
 		<p>Quantum computing – that sci-fi stuff that turns entangled molecules into computing digits – is drawing ever closer to reality. In September, leading companies including Alphabet, IBM, JPMorgan Chase and academic experts convened at a meeting sponsored by the White House Office of Science and Technology Policy.</p>
-		<div>
-	<img src="{%static 'AI2.jpg'%}"></div>
+		<center><div><br>
+	<img src="{%static 'quantum.jpg'%}" class="img-responsive"><h2>A quatum computer at QuAIL</h2><br></div></center>
 		<p>Quantum may be capable of delivering results exponentially faster than even the fastest of today’s systems. “While a traditional computer has to sequentially explore the potential solutions to a mathematical problem, a quantum system is able to look at every potential solution simultaneously and generate answers—not just the single best but nearly ten thousand close alternatives as well—in less than a second,” explains Arthur Herman in Forbes.</p>
 		<p>According to computer scientists a Qunatum Computer can exceptionally beat today's classical super computers in terms encryption, processing,machine learning,A.I. and in all terms.</p>
 		<p>
@@ -98,7 +56,8 @@
 		<p>
 			For example, they illustrate, “one application for this significant speed advantage with substantial near-term market potential is in pharmaceutical and chemical R&D: simulating the interaction among molecules as they grow in size, since they exhibit exponential growth in solution complexity similar to prime factorization of large numbers.”
 		</p>
-		<br><br><br><br><br><br>
 	</div>
+			<br><br><br><br><br><br>
+
 	</body>
 	</html>

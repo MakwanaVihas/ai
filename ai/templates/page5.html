@@ -16,73 +16,34 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="{%static 'css1.css'%}">
 	<style>
-		html{
-		min-width: 940px;
+p{
+		font-size: 1.5em;
+		font-family: Purisa;
 	}
-    img.chinese_ai:hover
-    {
-     	/*transform: translateY(10px);*/
-    	transform: scale(1.5);
-        
-        /*transform: translate(0px, 100px);*/
-    }
-    img.chinese_ai{
-    	transition: transform 3s;
-    }
-	p
-	{
-			font-family: Chilanka;
-			display: inline-block;
-			color: black;
-			text-align: left;
-			display: block;
-			margin-bottom: : 20px;
-			font-size: 30px;
-			margin-left: 20px;
-			margin-right: 20px;
-
-			/*border-radius: 25px;*/
-	   }
-
-	div.para
-	{
-			background-color: white;
-			box-shadow: 0px 0px 10px black;
-			/*border-radius: 25px;*/
-		    text-align: center;
+	h2{
+		font-size: 1em;
+		font-family: Purisa;
 	}
 	</style>
-	<script>
-		document.addEventListener("DOMContentLoaded",()=>{
-			child=document.querySelector(".para");
-			child.style.marginLeft=(window.innerWidth/7).toString()+"px";
-			child.style.marginRight=(window.innerWidth/7).toString()+"px";
-			// for(let i=0;i<child.length;i++){
-			// child[i].style.marginLeft=(window.innerWidth/7).toString()+"px";
-			// child[i].style.marginRight=(window.innerWidth/7).toString()+"px";
-		}
-		)
-	</script>
 	<title></title>
 </head>
 <body>
 	
-
-   <div class="header">
-      <a href="{%url 'index'%}">
-      <img src="{%static 'ai1.jpeg'%}" height="100px" width="170px" style="margin: 10px;vertical-align: middle; border-radius: 10px;border-color: black;"></a>
-      <h1 style="vertical-align: middle;">The A.I. Blog</h1>
+ <div class="center-block container">
+      <a href="{%url 'page' %}">
+      <img src="{%static 'ai1.jpeg'%}"class="center-block img-responsive"></a>
+      <h1 class="text-center" style="font-size: 50px;font-family: Purisa;color: white">The A.I. Blog</h1>
     </div>
-	<div class="para"><br><br><br>
+	<div class="container bg-info"><br><br><br>
 		<p><center><h1 style="font-family: Purisa"><strong>IIT Delhi and U.S. tech giant IBM collabs for research in A.I.</strong></h1></center></p><br><br><br>
         <p>
         	<strong>NEW DELHI</strong>: IIT Delhi and IBM have entered into a multi-year research collaboration on artificial intelligence.
         </p>
         <p>	
            The collaboration will enable the duo to develop AI solutions for organisations across all sector. AI solutions will be trained to comprehend complex questions using natural language techniques and derive new insights using domain knowledge.
-       </p>
-       <div align="center">
-	<img src="{%static 'iit.jpg'%}" height="300px" width="600px"><br><h2 style="font-size: 12px;width: 600px;">IBM researchers will partner with students and professors from the IIT Delhi to conduct joint research in AI systems focusing on some key traits like reasoning, comprehension and inferencing.</h2></div>
+       </p><center>
+       <div>
+	<img src="{%static 'iit.jpg'%}" class="img-responsive"><h2>IBM researchers will partner with students and professors from the IIT Delhi to conduct joint research in AI systems focusing on some key traits like reasoning, comprehension and inferencing.</h2></div></center>
        <p>
        	IBM researchers will partner with students and professors from the IIT Delhi to conduct joint research in AI systems focusing on some key traits like reasoning, comprehension and inferencing.
        </p>
@@ -95,6 +56,6 @@
        <p>
        	Source=>Economictimes
        </p>
-       <br><br><br><br><br>
 
-	</div></body></html>
+	</div>       <br><br><br><br><br>
+</body></html>
